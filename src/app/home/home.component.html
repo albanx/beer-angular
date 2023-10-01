@@ -1,0 +1,15 @@
+<h2>The beer of the day is</h2>
+
+<p *ngIf="isLoading">Loading the beer ...</p>
+
+<div class="container">
+  <div class="card" *ngIf="beerObject">
+    <img src="{{ beerObject.image_url }}" class="image" alt="..." />
+    <div class="card-body">
+      <h3 class="card-title">{{ beerObject.name | uppercase }}</h3>
+      <p>
+        {{ beerObject.description }}
+      </p>
+    </div>
+  </div>
+</div>
