@@ -13,6 +13,10 @@ export class HomeComponent implements OnInit {
   constructor(private api: ApiService) {}
 
   ngOnInit(): void {
+    this.getRandomBeer();
+  }
+
+  getRandomBeer() {
     this.isLoading = true;
     this.api.getRandomBeer().subscribe((data: any) => {
       this.beerObject = data[0];
