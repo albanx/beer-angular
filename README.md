@@ -232,13 +232,13 @@ Add the following styles to the `home.component.scss` file
 }
 ```
 
-Task 12: Add a button to the Home Component `home.component.html` that refreshes the beer
+## Task 12: Add a button to the Home Component `home.component.html` that refreshes the beer
 
 ```
 <button class="btn btn-primary" (click)="getRandomBeer()">Get another beer</button>
 ```
 
-Task 13: Add a lazy load module to search for breweries
+## Task 13: Add a lazy load module to search for breweries
 
 Requirements:
 - The module should search Breweries using this api https://api.openbrewerydb.org/v1/breweries?by_city=dublin&per_page=3
