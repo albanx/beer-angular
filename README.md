@@ -29,12 +29,15 @@ npm install -g @angular/cli
 ```
 ng new MyBeerApp                   // generates the app ready to run
 cd MyBeerApp
-ng add @nguniversal/express-engine // optional – adds server side rendering
 ng generate environments           // add environment support (dev, int, prod...)
 npm start                          // starts local dev server
 ```
 
-## Task 3: Create a new component called `home``
+When asked to add routing and style processor choose:
+- Would you like to add Angular routing? Yes 
+- Which stylesheet format would you like to use? SCSS
+
+## Task 3: Create a new component called `home`
 
 ```
 ng generate component home
